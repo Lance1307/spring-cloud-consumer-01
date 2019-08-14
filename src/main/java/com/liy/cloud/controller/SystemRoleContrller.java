@@ -17,7 +17,7 @@ public class SystemRoleContrller {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String  SERVICE_PROVIDER_URL="http://localhost:8081";
+    private static final String  SERVICE_PROVIDER_URL="http://spring-cloud-provider";
 
     @PostMapping("/save")
     public SystemRole saveObject(SystemRole role){

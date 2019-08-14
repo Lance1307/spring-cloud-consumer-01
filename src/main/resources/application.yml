@@ -1,6 +1,14 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
 spring:
   application:
-    name: spring-cloud-provider-01
+    name: spring-cloud-consumer
   profiles:
     active: local
   jpa:
@@ -27,7 +35,3 @@ spring:
       org.hibernate,type,desciptor.sql.BasicBinder: trace
       org.hibernate,type,desciptor.sql.BasicExtractor: trace
       com.abc.msg: debug
-
-server:
-  port: 8081
-
